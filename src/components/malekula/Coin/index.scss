@@ -1,0 +1,104 @@
+#coin {
+    // outline: 2px solid white;
+
+    .section_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10vw 0;
+        gap: 3vw;
+
+        .img {
+            width: 40vw;
+            height: 35vw;
+        }
+
+        .section_main {
+            width: 40vw;
+
+            .title_box {
+                background-image: url("../../../assets/image/line_short.png");
+                background-repeat: no-repeat;
+                background-size: 38vw;
+                margin: 0;
+                margin-bottom: 3vw;
+                padding: 1vw 0 0 2vw;
+
+                .title {
+                    font-size: 5vw;
+                    line-height: 5vw;
+                    font-weight: 600;
+                    letter-spacing: -0.04em;
+                    margin: 0;
+                    background-image: linear-gradient(96.63deg, #FFFFFF 5.78%, #B16262 72.85%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
+                }
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .item_title {
+                    margin: 0;
+                    font-size: 1.5vw;
+                    line-height: 1.8vw;
+                    letter-spacing: -0.04em;
+                    text-align: center;
+                    width: 35vw;
+                }
+
+
+            }
+        }
+
+
+    }
+
+    @media screen and (max-width: 414px) {
+        .section_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10vw 0;
+            gap: 3vw;
+
+            .img {
+                display: none;
+            }
+
+            .section_main {
+                width: 85vw;
+
+                .title_box {
+                    background-size: 70vw;
+                    margin: 0;
+                    margin-bottom: 3vw;
+                    padding: 1vw 0 0 2vw;
+
+
+                    .title {
+                        font-size: 5vw;
+                        line-height: 6vw;
+                        font-weight: 600;
+                    }
+                }
+
+                .item {
+                    .item_title {
+                        margin: 0;
+                        font-size: 3.5vw;
+                        line-height: 4vw;
+                        letter-spacing: -0.04em;
+                        text-align: center;
+                        width: 70vw;
+                    }
+                }
+            }
+        }
+    }
+}

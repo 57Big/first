@@ -1,0 +1,10 @@
+$screen-ms: 600px; // 360
+
+
+
+@mixin responsive-ms {
+  @media (max-width: #{$screen-ms}) {
+    @content;
+    overflow-x: hidden;
+  }
+}

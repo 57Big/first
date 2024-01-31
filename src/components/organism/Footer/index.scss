@@ -1,0 +1,233 @@
+#footer {
+
+    .footer_main {
+        width: 100%;
+        height: 17vw;
+        background: rgba(34, 16, 16, 1);
+        border-radius: 3vw 3vw 0 0;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3vw;
+
+        .logo_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logo {
+                margin: 0;
+                width: 15vw;
+                height: 11vw;
+            }
+
+            .logo_text {
+                margin: 0;
+                font-size: 1.5vw;
+            }
+        }
+
+        .map_box {
+            padding-top: 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .map_title {
+                margin: 0;
+                font-size: 2.5vw;
+                font-weight: 600;
+            }
+
+            .text_box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: .7vw;
+
+                .map_text {
+                    margin: 0;
+                    font-size: 1.5vw;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: rgba(255, 75, 75, 1);
+                    }
+                }
+            }
+        }
+
+        .social_box {
+            padding-top: 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .social_title {
+                margin: 0;
+                font-size: 2.5vw;
+                font-weight: 600;
+            }
+
+            .socials {
+                display: flex;
+                gap: 1vw;
+
+                .social_lick {
+                    padding: .5vw;
+                    background-color: white;
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3vw;
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        transition: .5s;
+                        background-color: rgb(169, 161, 161);
+
+                        svg {
+                            transition: .5s;
+                        }
+                    }
+
+                    svg {
+                        width: 2.2vw;
+                        height: 2.2vw;
+                    }
+                }
+            }
+
+            .adress {
+                width: 35vw;
+
+                .adress_text {
+                    margin: 0;
+                    font-size: 1.5vw;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .footer_main {
+            width: 100%;
+            height: 100%;
+
+            border-radius: 5vw 5vw 0 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            padding-bottom: 3vw;
+            justify-content: center;
+
+            .logo_box {
+                // outline: 2px solid blue;
+                width: 35vw;
+                justify-content: center;
+
+                .logo {
+                    margin: 0;
+                    width: 30vw;
+                    height: 20vw;
+                }
+
+                .logo_text {
+                    margin: 0;
+                    font-size: 3.5vw;
+                    padding: 1vw;
+                }
+            }
+
+            .map_box {
+                padding-top: 2vw;
+                // outline: 2px solid red;
+                width: 35vw;
+                align-items: center;
+
+                .map_title {
+                    font-size: 4.5vw;
+                    font-weight: 700;
+                    margin-bottom: 3vw;
+                    padding-top: 3vw;
+                }
+
+                .text_box {
+
+                    gap: 2vw;
+
+                    .map_text {
+                        margin: 0;
+                        font-size: 4vw;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: rgba(255, 75, 75, 1);
+                        }
+                    }
+                }
+            }
+
+            .social_box {
+                padding-top: 2vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 5vw 0;
+
+                .social_title {
+                    margin: 0;
+                    font-size: 4.5vw;
+                    font-weight: 700;
+                    margin-bottom: 3vw;
+                    text-align: center;
+                }
+
+                .socials {
+                    display: flex;
+                    gap: 3vw;
+
+
+                    .social_lick {
+                        padding: .5vw;
+                        background-color: white;
+                        width: 8vw;
+                        height: 8vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 8vw;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        &:hover {
+                            transition: .5s;
+                            background-color: rgb(95, 8, 8);
+
+                            svg {
+                                color: white;
+                                transition: .5s;
+                            }
+                        }
+
+                        svg {
+                            color: black;
+                            width: 7vw;
+                            height: 7vw;
+                        }
+                    }
+                }
+
+                .adress {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+}

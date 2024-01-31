@@ -1,0 +1,11 @@
+export { default as Navbar } from "./Navbar";
+export { default as Header } from "./Header";
+export { default as Calculator } from "./Calculator";
+export { default as Numbers } from "./Numbers";
+export { default as Work } from "./Work";
+export { default as Crypto } from "./Crypto";
+export { default as Security } from "./Security";
+export { default as TryFree } from "./TryFree";
+export { default as Contact } from "./Contact";
+export { default as FAQ } from "./FAQ";
+export { default as Footer } from "./Footer";

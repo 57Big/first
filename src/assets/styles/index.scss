@@ -1,0 +1,20 @@
+@import "mixin";
+@import "global";
+
+@import "../../components/malekula/SendInfo";
+@import "../../components/malekula/GoogleMap";
+@import "../../components/malekula/Coin";
+
+@import "../../components/organism/Navbar";
+@import "../../components/organism/Header";
+@import "../../components/organism/Calculator";
+@import "../../components/organism/Numbers";
+@import "../../components/organism/Work";
+@import "../../components/organism/Crypto";
+@import "../../components/organism/Security";
+@import "../../components/organism/TryFree";
+@import "../../components/organism/Contact";
+@import "../../components/organism/FAQ";
+@import "../../components/organism/Footer";
+
+@import "../../pages/Main";

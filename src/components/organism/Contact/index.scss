@@ -1,0 +1,20 @@
+#contact {
+    margin: 10vw 0 5vw 0;
+
+    .contact_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    @media screen and (max-width: 414px) {
+        .contact_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5vw;
+        }
+    }
+}

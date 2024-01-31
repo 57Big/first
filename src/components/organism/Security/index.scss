@@ -1,0 +1,154 @@
+#security {
+
+    .title_box {
+        background-image: url("../../../assets/image/line.png");
+        background-repeat: no-repeat;
+        background-size: 96vw;
+        margin: 2vw 1vw 2vw 1vw;
+
+        .title {
+            margin: 3vw 0 0 3vw;
+            font-size: 5vw;
+            line-height: 5.2vw;
+            letter-spacing: -0.04em;
+            text-align: left;
+            padding: 1vw 0 0 2vw;
+            margin: 0;
+            width: 35vw;
+            background-image: linear-gradient(96.63deg, #FFFFFF 5.78%, #B16262 82.85%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+
+    .background {
+
+
+        .number_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4vw;
+
+            .section_img {
+                width: 35vw;
+                height: 35vw;
+            }
+
+            .count_box {
+                display: flex;
+                flex-wrap: wrap;
+                width: 41vw;
+                gap: 2vw;
+
+                .none {
+                    border: transparent !important;
+                }
+
+                .card {
+                    padding: 1vw 2vw;
+                    border: 1px solid rgb(84, 41, 41);
+                    border-radius: 2.5vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 1.5vw;
+                    width: 15vw;
+
+                    .card_top {
+                        .title {
+                            font-size: 2vw;
+                            font-weight: 500;
+                            margin: 0;
+                            margin-bottom: 2vw;
+                        }
+
+                        .img {
+                            height: 6vw;
+                        }
+                    }
+
+                    .text {
+                        font-size: 1vw;
+                        width: 16vw;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 414px) {
+        .title_box {
+            margin: 2vw 1vw 2vw 1vw;
+            width: 100%;
+
+            .title {
+                margin: 3vw 0 0 3vw;
+                font-size: 6vw;
+                line-height: 7vw;
+                font-weight: 700;
+                padding: 1vw 0 0 3vw;
+                width: 50%;
+            }
+        }
+
+        .background {
+            .number_box {
+                flex-direction: column;
+                gap: 0vw;
+
+                .section_img {
+                    width: 65vw;
+                    height: 65vw;
+                }
+
+                .count_box {
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    width: 100%;
+                    gap: 4vw;
+
+                    .none {
+                        display: none;
+                    }
+
+                    .card {
+                        padding: 1vw 2vw;
+                        border: 2.5px solid rgb(84, 41, 41);
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1.5vw;
+                        width: 70vw;
+
+                        .card_top {
+                            padding-left: 2vw;
+
+                            .title {
+                                font-size: 4.5vw;
+                                font-weight: 500;
+                                margin: 0;
+                                margin-bottom: 2vw;
+                            }
+
+                            .img {
+                                height: 12vw;
+                            }
+                        }
+
+                        .text {
+                            font-size: 3vw;
+                            width: 40vw;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}

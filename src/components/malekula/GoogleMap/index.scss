@@ -1,0 +1,15 @@
+#map {
+    iframe {
+        width: 45vw;
+        height: 40vw;
+        border-radius: 1vw;
+    }
+
+    @media screen and (max-width: 414px) {
+        iframe {
+            width: 75vw;
+            height: 50vw;
+            border-radius: 1vw;
+        }
+    }
+}

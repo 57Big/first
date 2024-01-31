@@ -1,0 +1,342 @@
+#calculator {
+
+    .calculator_box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5vw;
+        padding: 5vw 0 10vw 0;
+
+        .title_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 25vw;
+
+            .title {
+                width: 70vw;
+                background-image: linear-gradient(271.36deg, rgba(177, 98, 98, 0.694118) 16.18%, rgba(177, 98, 98, 0) 96.3%),
+                    linear-gradient(0deg, #F5F5F5, #F5F5F5);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+                font-size: 5vw;
+                font-weight: 400;
+                line-height: 5.5vw;
+                letter-spacing: -0.04em;
+                text-align: center;
+                margin: 0;
+            }
+
+            .cours {
+                border-radius: 2vw;
+                padding: 1vw 5vw;
+                display: flex;
+                gap: 1vw;
+                max-width: 60vw;
+                position: relative;
+
+                .text {
+                    font-size: 3vw;
+                    font-weight: 500;
+                    line-height: 4vw;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin: 0;
+                    color: white;
+
+                }
+            }
+        }
+
+        .cours::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 3vw;
+            padding: .2vw;
+            background: linear-gradient(96.63deg, #FFFFFF 5.78%, #B72929 72.85%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+
+        .calculate {
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+
+            .icon_box {
+                button {
+                    border: 1px solid rgb(84, 41, 41);
+                    color: white;
+
+                    &:hover {
+                        background-color: rgb(65, 67, 67);
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 1vw;
+
+                .input_box {
+                    div {
+                        label {
+                            color: white !important;
+                        }
+                    }
+
+                    .field {
+                        border-radius: 1vw !important;
+                        border: 1px solid rgb(84, 41, 41);
+                        position: relative;
+
+                        p {
+                            display: none;
+                        }
+
+                        &:focus-within {
+                            border: none;
+                        }
+
+                        input {
+                            border-color: white !important;
+                            color: white;
+                            width: 20vw;
+                            border-radius: 1vw;
+                            font-weight: 500;
+                            font-size: 1.5vw;
+                            padding: 1vw 2vw;
+                            width: 100%;
+                        }
+
+                        input[type="number"]::-webkit-inner-spin-button,
+                        input[type="number"]::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                            display: none;
+                        }
+
+                        div {
+                            border-radius: 1vw !important;
+                        }
+                    }
+                }
+
+                .select {
+
+                    .MuiFormControl-root,
+                    .text_box,
+                    select,
+                    .css-1869usk-MuiFormControl-root {
+                        border: 1px solid rgb(84, 41, 41);
+                        border-radius: 3vw;
+                        color: white !important;
+                        margin: 0;
+                        width: 10vw;
+
+                        &:focus-within {
+                            outline: none;
+                            border: none;
+                        }
+
+                        .MuiInputBase-root,
+                        .MuiOutlinedInput-root,
+                        .MuiInputBase-colorPrimary,
+                        .MuiInputBase-formControl .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+                            border-radius: 3vw;
+                            color: white !important;
+                            border: none;
+                            outline: none;
+                            font-size: 1.5vw;
+
+                            &:focus-within {
+                                outline: none;
+                                border: none;
+                            }
+
+                            .MuiSelect-select,
+                            .MuiSelect-outlined,
+                            .MuiInputBase-input,
+                            .MuiOutlinedInput-input,
+                            .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+                                padding: 1vw 2vw;
+
+                                &:focus-within {
+                                    outline: none;
+                                    border: none;
+                                }
+                            }
+
+                            &:hover {
+                                border: none;
+                                outline: none;
+                            }
+
+                            input {
+                                &:focus-within {
+                                    outline: none;
+                                    border: none;
+                                }
+                            }
+
+                            select {
+                                &:focus-within {
+                                    outline: none;
+                                    border: none;
+                                }
+                            }
+
+                            svg {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .select_of {
+
+                    .MuiFormControl-root,
+                    .text_box,
+                    select,
+                    .css-1869usk-MuiFormControl-root {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        height: 60vh;
+        padding: 20vw 0;
+        margin-bottom: 10vw;
+
+        .calculator_box {
+            justify-content: flex-start;
+            gap: 15vw;
+            padding: 0;
+            margin: 0;
+
+            .title_box {
+                min-height: 25vh;
+                max-height: 50vh;
+                gap: 10vw;
+
+                .title {
+                    width: 90vw;
+                    font-size: 10vw;
+                    font-weight: 400;
+                    line-height: 10.5vw;
+                }
+
+                .cours {
+                    border-radius: 2vw;
+                    padding: 3vw 5vw;
+                    display: flex;
+                    gap: 1vw;
+                    max-width: 90vw;
+                    position: relative;
+
+                    .text {
+                        font-size: 6vw;
+                        font-weight: 500;
+                        line-height: 6.5vw;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        margin: 0;
+                        color: white;
+
+                    }
+                }
+            }
+
+            .cours::before {
+                padding: 3px;
+            }
+
+            .calculate {
+                flex-direction: column;
+                gap: 7vw;
+
+                .icon_box {
+                    button {
+                        border: 3px solid rgb(84, 41, 41);
+                        color: white;
+
+                        svg {
+                            font-size: 8vw;
+                        }
+                    }
+                }
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 1vw;
+
+                    .input_box {
+                        .field {
+                            border: 3px solid rgb(84, 41, 41);
+                            border-radius: 2vw !important;
+
+                            input {
+                                font-weight: 500;
+                                font-size: 5.5vw;
+                                padding: 3vw 5vw;
+                                width: 50vw;
+                            }
+
+                            input[type="number"]::-webkit-inner-spin-button,
+                            input[type="number"]::-webkit-outer-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                                display: none;
+                            }
+
+                            div {
+                                border-radius: 2vw !important;
+                            }
+                        }
+                    }
+
+                    .select {
+
+                        .MuiFormControl-root,
+                        .text_box,
+                        select,
+                        .css-1869usk-MuiFormControl-root {
+                            margin: 0;
+                            width: 25vw;
+                            border: 3px solid rgb(84, 41, 41);
+
+                            .MuiInputBase-root,
+                            .MuiOutlinedInput-root,
+                            .MuiInputBase-colorPrimary,
+                            .MuiInputBase-formControl .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+                                font-weight: 500;
+                                font-size: 3.5vw;
+                                padding: 3vw 5vw;
+                                width: 25vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

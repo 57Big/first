@@ -1,0 +1,83 @@
+#navbar {
+    .navbar_box {
+        padding: 0;
+        margin: 0;
+        z-index: 999;
+
+        .MuiButtonBase-root,
+        .MuiButton-root,
+        .MuiButton-text,
+        .MuiButton-textPrimary,
+        .MuiButton-sizeMedium,
+        .MuiButton-textSizeMedium,
+        .MuiButton-root,
+        .MuiButton-text,
+        .MuiButton-textPrimary,
+        .MuiButton-sizeMedium,
+        .MuiButton-textSizeMedium,
+        .css-1kkpk3h-MuiButtonBase-root-MuiButton-root {
+            text-transform: lowercase;
+            font-size: 1.5vw;
+            letter-spacing: 0.05em;
+            border-radius: 2vw;
+
+            &:hover {
+                color: rgba(255, 75, 75, 1);
+            }
+        }
+
+
+
+        .logo {
+            width: 8vw;
+            cursor: pointer;
+
+
+
+        }
+
+
+
+    }
+
+
+
+    @media screen and (max-width: 414px) {
+        .navbar_box {
+            height: 10vh;
+
+            .logo {
+                width: 20vw;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+}
+
+
+.MuiPaper-root,
+.MuiMenu-paper,
+.MuiPaper-elevation,
+.MuiPaper-rounded,
+.MuiPaper-elevation8,
+.MuiPopover-paper,
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+
+    .MuiList-root,
+    .MuiList-padding,
+    .MuiMenu-list,
+    .css-6hp17o-MuiList-root-MuiMenu-list {
+        background-color: rgba(190, 67, 18, 0.943);
+        color: white;
+        font-weight: 500;
+
+
+        li:hover {
+            background-color: rgba(121, 67, 45, 0.943);
+        }
+    }
+
+
+}

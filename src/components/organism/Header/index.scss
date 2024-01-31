@@ -1,0 +1,207 @@
+#header {
+    width: 100%;
+
+    .active {
+        .img_navigate {
+
+            transition: 1s;
+            transform: rotate(180deg);
+        }
+    }
+
+    .socials {
+        position: fixed;
+        top: 50%;
+        right: 2vw;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .button_navigate {
+
+
+            outline: none;
+            border: none;
+            border-radius: 5vw;
+            transition: 1s;
+            background-color: transparent;
+
+            &:enabled:hover {
+                transition: 1s;
+                -webkit-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                -moz-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+            }
+
+            &:enabled:active {
+                transition: 1s;
+                -webkit-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                -moz-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+            }
+
+            .img_navigate {
+                width: 5vw;
+                transition: 1s;
+                height: 5vw;
+            }
+
+        }
+
+        .social_lick {
+            outline: none;
+            border: none;
+            border-radius: 5vw;
+            transition: 1s;
+            background-color: transparent;
+            background-color: rgba(240, 248, 255, 0.298);
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: .5s;
+                -webkit-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                -moz-box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+                box-shadow: 0px 0px 49px 0px rgba(188, 196, 202, 0.2);
+            }
+
+            svg {
+                width: 2.2vw;
+                height: 2.2vw;
+                transition: .5s;
+                border-radius: 50%;
+                color: white;
+            }
+        }
+    }
+
+
+
+    .background {
+        background-image: url("../../../assets/image/header.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-left: 1vw;
+        width: 98vw;
+        height: 55vw;
+        position: sticky;
+
+        .title_box {
+            position: absolute;
+            top: 0;
+            margin: 3vw 0 0 3vw;
+
+            .logo_box {
+                display: flex;
+                justify-content: space-between;
+                width: 55vw;
+                position: relative;
+
+                .img {
+                    width: 20vw;
+                    height: 22vw;
+                }
+
+                .title {
+                    font-weight: 700;
+                    line-height: 7vw;
+                    letter-spacing: -0.04em;
+                    text-align: left;
+                    font-size: 6vw;
+                    text-align: left;
+                    z-index: 2;
+                    margin: 0;
+                }
+            }
+
+            .group_box {
+                margin-top: 20vw;
+                width: 91vw;
+                display: flex;
+                gap: 3vw;
+                justify-content: space-between;
+
+                .group_img {
+                    width: 12vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+
+        .socials {
+            right: 0px;
+            gap: 10px;
+
+            .button_navigate {
+                border-radius: 50%;
+
+                .img_navigate {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .social_lick {
+
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .background {
+            width: 100vw;
+            height: 90vh;
+            position: sticky;
+
+            .title_box {
+                position: absolute;
+                top: 5vw;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+
+                .logo_box {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    width: 55vw;
+
+                    .img {
+                        width: 40vw;
+                        height: 44vw;
+                    }
+
+                    .title {
+                        line-height: 18vw;
+                        font-weight: 900;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        font-size: 15vw;
+                        text-align: center;
+                        margin: 20vw 0 0 0;
+                    }
+                }
+
+                .group_box {
+                    display: none;
+                }
+            }
+        }
+    }
+}
